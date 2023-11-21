@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  selectedPostId: number | undefined;
+  selectedUserId: number | undefined;
+
+  onPostSelected(postId: number): void {
+    this.selectedPostId = postId;
+  }
+
+  onUserSelected(userId: number): void {
+    this.selectedUserId = userId;
+  }
+
   title = 'Lab-12';
 }
